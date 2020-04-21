@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Ian-Fields/non-profit-calculator#readme",
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "chai": "^4.2.0",
     "mocha": "^7.1.1"
   },

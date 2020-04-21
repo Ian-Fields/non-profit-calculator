@@ -1,0 +1,30 @@
+body{
+  background-color: #ffffff;
+  color: #10152A
+}
+
+.logo{
+  text-align: center;
+}
+.header1{
+  text-align: center;
+}
+
+.header2{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+form{
+  text-align: left;
+  padding: 2px;
+  margin: 5px;
+
+}
+
+.submit{
+  text-align: center;
+  margin-top: 15px;
+}
+
