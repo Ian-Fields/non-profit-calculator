@@ -24,6 +24,21 @@ form{
 
 }
 
+.yes{
+  background-color: #ffffff;
+  color: #10152A;
+  padding-top: 10px;
+  
+}
+
+.no{
+  background-color: #ffffff;
+  color: #10152A;
+  padding-top: 10px;
+  margin-left: 10px;
+  
+}
+
 .submit{
   text-align: center;
   margin-top: 15px;
