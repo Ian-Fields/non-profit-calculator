@@ -45,7 +45,7 @@ form{
 }
 
 .return-header{
-  text-align: left;
+  text-align: center;
   padding: 2px;
   margin: 5px;
 }
@@ -53,5 +53,15 @@ form{
 ul{
   padding: 2px;
   margin: 5px;
+}
+
+li{
+  list-style: none;
+}
+
+.second-header{
+  text-align: center;
+  padding: 5px;
+  margin: 20px;
 }
 

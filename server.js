@@ -21,10 +21,32 @@ app.get('/', (request, response) => {
 
 app.post('/form', (request, response) => {
   const formInfo = (request.body)
+
   console.log(request.body)
+
   // We're going to hard code dummy data just to have something to present. 
 
-  formInfo.exitCostTotalCost = formInfo.annualSal + 100000 // need to pasre all form info before using
+  const annSalary = parseInt(formInfo.annualSal)
+
+  const formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: 2
+  })
+  let totalExitCost = annSalary + 4154 + 2000 + 4873
+  let totalRecruitingCost = 31733 + 4180 + 41238 + 6758
+  let totalOnboardingCost = 1000 + 3000 + 2219
+  let totalLossCost = totalExitCost + totalRecruitingCost + totalOnboardingCost
+  let totalProgramCost = 21310
+  let totalSavings = totalLossCost - totalProgramCost
+
+  formInfo.totalExitCost = formatter.format(totalExitCost)
+  formInfo.totalRecruitingCost = formatter.format(totalRecruitingCost)
+  formInfo.totalOnboardingCost = formatter.format(totalOnboardingCost)
+  formInfo.totalLossCost = formatter.format(totalLossCost)
+  formInfo.totalProgramCost = formatter.format(totalProgramCost)
+  formInfo.totalSavings = formatter.format(totalSavings)
+
 
   return response.render('formResult', formInfo)
 })

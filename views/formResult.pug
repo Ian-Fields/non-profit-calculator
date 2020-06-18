@@ -5,42 +5,35 @@ html
     h1(class="logo")
       img(src="./images/OpenAvenues logo.png")
 
-    h1 Snapshot by Type of Cost
+    h1(class="second-header") Snapshot by Type of Cost
 
     h2(class="return-header") Exit Cost
-      dl
-        dt totalCost
-        dd Total Cost
-        dt directCost
-        dd Direct Cost
-        dt hiddenCost
-        dd Hidden Cost
-    
+      ul
+        li=totalExitCost
+        
     h2(class="return-header") Recruitment and Hiring Cost
       ul
-        li=totalCost
-        li=directCost
-        li=hiddenCost
+        li=totalRecruitingCost
+        
 
     h2(class="return-header") Onboarding Cost
       ul
-        li=totalCost
-        li=directCost
-        li=hiddenCost
+        li=totalOnboardingCost
+       
 
     h2(class="return-header") Cost of Loss of Employee
       ul
-        li=totalCost
-        li=directCost
-        li=hiddenCost
+        li=totalLossCost
+       
     
     h2(class="return-header") OAF Program Cost
       ul
-        li=totalCost
+        li=totalProgramCost
 
     h2(class="return-header") Overall Savings with OA Program
       ul
-        li=totalCost
+        li=totalSavings
+    
 
 
 
