@@ -1,11 +1,19 @@
-// let annualSal = document.getElementById('annualSal')
-// let annualSalary = parseInt(annualSal.value)
+// const handleFormSubmit = event => {
+//   event.preventDefault()
 
-// function calculate() => {
-//   let weeklySal = annualSalary / 52
-//   let hourlySal = weeklySal / 40
+//   const form = document.getElementByClass('form-control')[0]
 
-//   return hourlySal
+//   form.addEventListener('submit', handleFormSubmit)
+
+//   const data = {}
+//   const dataContainer = document.getElementById('results_display')[0]
+
+//   dataContainer.textContent = JSON.stringify(data, null, ' ')
 // }
+
+
+
+
+
 
 

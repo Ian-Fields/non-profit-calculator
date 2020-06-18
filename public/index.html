@@ -12,7 +12,7 @@
   <h1 class="header1">OAF Costing Instrument</h1>
   <h3 class="header2">Please fill in all the boxes below:</h2>
     <div class="container">
-      <form>
+      <form method="post" action="/form">
         <div class="row">
           <div class="col col-6">
             <label for="start">Start Date for Data: </label>
@@ -36,9 +36,11 @@
           <div class="col col-6 operation">
             <select id="operation" class="form-control" id="industry" name="industry">
               <option value=""></option>
-              <option value="Industry">Industry One</option>
-              <option value="Industry">Industry Two</option>
-              <option value="Industry">Industry Three</option>
+              <option value="Industry">Finance and Banking</option>
+              <option value="Industry">Sales and Marketing</option>
+              <option value="Industry">IT/Information Systems/Data Processing</option>
+              <option value="Industry">Scientific</option>
+              <option value="Industry">Engineering</option>
             </select>
           </div>
         </div>
