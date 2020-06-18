@@ -2,13 +2,19 @@ html
   include partials/head
 
   body
+    h1(class="logo")
+      img(src="./images/OpenAvenues logo.png")
+
     h1 Snapshot by Type of Cost
 
     h2(class="return-header") Exit Cost
-      ul
-        li=totalCost
-        li=directCost
-        li=hiddenCost
+      dl
+        dt totalCost
+        dd Total Cost
+        dt directCost
+        dd Direct Cost
+        dt hiddenCost
+        dd Hidden Cost
     
     h2(class="return-header") Recruitment and Hiring Cost
       ul
@@ -22,7 +28,7 @@ html
         li=directCost
         li=hiddenCost
 
-    h2(class="return-header") Cos of Loss of Employee
+    h2(class="return-header") Cost of Loss of Employee
       ul
         li=totalCost
         li=directCost

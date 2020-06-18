@@ -18,8 +18,10 @@ app.get('/', (request, response) => {
   return response.render('form')
 })
 
+
 app.post('/form', (request, response) => {
   const formInfo = (request.body)
+  console.log(request.body)
   // We're going to hard code dummy data just to have something to present. 
 
   formInfo.exitCostTotalCost = formInfo.annualSal + 100000 // need to pasre all form info before using
