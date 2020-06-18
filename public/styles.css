@@ -1,0 +1,57 @@
+body{
+  background-color: #ffffff;
+  color: #10152A
+}
+
+.logo{
+  text-align: center;
+  margin-top: 15px;
+}
+.header1{
+  text-align: center;
+}
+
+.header2{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+form{
+  text-align: left;
+  padding: 2px;
+  margin: 5px;
+
+}
+
+.yes{
+  background-color: #ffffff;
+  color: #10152A;
+  padding-top: 10px;
+  
+}
+
+.no{
+  background-color: #ffffff;
+  color: #10152A;
+  padding-top: 10px;
+  margin-left: 10px;
+  
+}
+
+.submit{
+  text-align: center;
+  margin-top: 15px;
+}
+
+.return-header{
+  text-align: left;
+  padding: 2px;
+  margin: 5px;
+}
+
+ul{
+  padding: 2px;
+  margin: 5px;
+}
+

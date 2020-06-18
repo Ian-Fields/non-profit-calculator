@@ -1,0 +1,154 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="logo">
+    <a href="https://www.openavenuesfoundation.org/">
+      <img src="./images/OpenAvenues logo.png"></a></div>
+  <h1 class="header1">OAF Costing Instrument</h1>
+  <h3 class="header2">Please fill in all the boxes below:</h2>
+    <div class="container">
+      <form method="post" action="/form">
+        <div class="row">
+          <div class="col col-6">
+            <label for="start">Start Date for Data: </label>
+          </div>
+          <div class="col col-6">
+            <input type="text" class="form-control" id="start" name="start" placeholder="DD/MM/YYYY" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-6">
+            <label for="end">End Date for Data: </label>
+          </div>
+          <div class="col col-6">
+            <input type="text" class="form-control" id="end" name="end" placeholder="DD/MM/YYYY">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-6">
+            <label for="industry">Company Industry: </label>
+          </div>
+          <div class="col col-6 operation">
+            <select id="operation" class="form-control" id="industry" name="industry">
+              <option value=""></option>
+              <option value="Industry">Finance and Banking</option>
+              <option value="Industry">Sales and Marketing</option>
+              <option value="Industry">IT/Information Systems/Data Processing</option>
+              <option value="Industry">Scientific</option>
+              <option value="Industry">Engineering</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-6">
+            <label for="eirSpecialty">Expert-In-Residence (EIR) Occupational Specialty: </label>
+          </div>
+          <div class="col col-6">
+            <input type="text" class="form-control" id="eirSpecialty" name="eirSpecialty" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-6">
+            <label for="eirTitle">Expert-In-Residence (EIR) Job Title: </label>
+          </div>
+          <div class="col col-6">
+            <input type="text" class="form-control" id="eirTitle" name="eirTitle" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-6" data-toggle="tooltip"
+            title="North American Industry Classification System Code  https://www.naics.com/search/">
+            <a href="https://www.naics.com/search/" target="_blank"><label for="labor">NAICS Code:</label></a>
+          </div>
+          <div class="col col-6">
+            <input type="text" class="form-control" id="labor" name="labor" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-6" data-toggle="tooltip" title="Based on 40 hours/week, 52 weeks/year">
+            <label for="annualSal">DOL Annual Salary: </label>
+          </div>
+          <div class="col col-6">
+            <input type="text" class="form-control" id="annualSal" name="annualSal" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-6" data-toggle="tooltip" title="Based on 40 hours/week">
+            <label for="hourlySal">DOL Hourly Salary: </label>
+          </div>
+          <div class="col col-6">
+            <input type="text" class="form-control" id="hourlySal" name="hourlySal" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-6" data-toggle="tooltip"
+            title="Occupational Employment Survey/Standard Occupational Classification code  https://www.bls.gov/oes/2018/may/oes150000.htm ">
+            <a href="https://www.bls.gov/oes/2018/may/oes150000.htm" target="_blank"><label for="code"> OES/SOC
+                Code:</label></a>
+          </div>
+          <div class="col col-6">
+            <input type="text" class="form-control" id="code" name="code" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-6">
+            <label for="degree">EIR Degree: </label>
+          </div>
+          <div class="col col-6">
+            <input type="text" class="form-control" id="degree" name="degree" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-6">
+            <label for="recruiter">Is the employer using an external corporate recruiter? </label>
+          </div>
+          <div class="col col-6 operation">
+            <label class="btn btn-secondary yes">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Yes
+            </label>
+            <label class="btn btn-secondary no">
+              <input type="radio" name="options" id="option3" autocomplete="off"> No
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-6">
+            <label for="sign-on">Is the employer offering a sign-on bonus? </label>
+          </div>
+          <div class="col col-6 operation">
+            <label class="btn btn-secondary yes">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Yes
+            </label>
+            <label class="btn btn-secondary no">
+              <input type="radio" name="options" id="option3" autocomplete="off"> No
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-6">
+            <label for="relocation">Is the employer offering a relocation bonus? </label>
+          </div>
+          <div class="col col-6 operation">
+            <label class="btn btn-secondary yes">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Yes
+            </label>
+            <label class="btn btn-secondary no">
+              <input type="radio" name="options" id="option3" autocomplete="off"> No
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-12 submit">
+            <button class="btn btn-light submit" type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+</body>
+
+</html>
